@@ -1,0 +1,15 @@
+{
+  "name": "army-control-coop-raids",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Army Control browser game with private co-op boss raid rooms",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check coop.js && node --check game.js",
+    "test": "node tests/static-check.js && node tests/co-op-smoke.js"
+  },
+  "dependencies": {
+    "ws": "^8.18.3"
+  }
+}
